@@ -1,0 +1,33 @@
+.nav {
+  display: flex;
+  width: 14.5rem;
+  height: 4.375rem;
+  padding: 0rem 4rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  background: var(--support-white, #fff);
+}
+
+.img {
+  width: 12.87163rem;
+  height: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media (min-width: 788px) {
+  .nav {
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=Nav.css.map */

@@ -1,0 +1,58 @@
+.itemsFrame {
+  display: flex;
+  width: 22.5rem;
+  padding: 2.8125rem 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.875rem;
+  background: var(--support-white, #fff);
+}
+
+.frame186 {
+  width: 1.28125rem;
+  height: 2.6125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.3125rem;
+}
+
+.typography {
+  width: 20.5rem;
+  color: var(--support-black, var(--colors-secondary-700, #1b2631));
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8125rem;
+}
+
+@media (min-width: 788px) {
+  .itemsFrame {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .typography {
+    width: 51.125rem;
+    color: var(--support-black, var(--colors-secondary-700, #1b2631));
+    text-align: center;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.25rem;
+  }
+  .frame186 {
+    width: 100%;
+    height: 13.625rem;
+    display: flex;
+    align-items: center;
+    gap: 1.875rem 1.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=Advertisements.css.map */

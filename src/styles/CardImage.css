@@ -1,0 +1,117 @@
+.imgContainer {
+  display: flex;
+  height: 27.375rem;
+  width: 18.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  background: url("/public/img/CardImage.jpg"), lightgray 50%/cover no-repeat;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.bottomElements {
+  display: flex;
+  width: 18.25rem;
+  height: 4.75rem;
+  padding: 22.75rem 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm, 0.75rem);
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9375rem;
+  align-self: stretch;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5625rem;
+  align-self: stretch;
+}
+
+.frameText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.frameTitle {
+  margin: 0rem;
+  width: 15.25rem;
+  color: var(--support-white, #fff);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+.extras {
+  display: flex;
+  width: 15.25rem;
+  align-items: flex-start;
+  gap: var(--spacing-sm, 0.75rem);
+}
+
+.descripcionImage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.frameOfDescripcion {
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+}
+
+.iconUsers {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+.students {
+  margin: 0rem;
+  color: var(--support-white, #fff);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.pStudents {
+  margin: 0rem;
+}
+
+.ranking {
+  display: flex;
+  align-items: center;
+  gap: 0.1875rem;
+}
+
+.containerRanting {
+  display: flex;
+  align-items: center;
+}
+
+.ratingText {
+  margin: 0rem;
+  color: var(--support-white, #fff);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+/*# sourceMappingURL=CardImage.css.map */
