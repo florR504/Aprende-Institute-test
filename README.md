@@ -1,3 +1,8 @@
+# How to see the live version of the project?
+
+The project is available in the following link: https://aprende-institute-florr.netlify.app/
+Hope you enjoy it!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
