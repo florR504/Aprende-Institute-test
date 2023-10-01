@@ -28,7 +28,7 @@ $font-family_1: "Source Sans 3", sans-serif;
 }
 .inputText {
 	display: flex;
-	width: 18.8rem;
+	width: auto;
 	height: 3.44rem;
 	padding-top: 0.38rem;
 	flex-direction: column;
@@ -38,7 +38,7 @@ $font-family_1: "Source Sans 3", sans-serif;
 }
 @media (min-width: 788px) {
 	.inputText {
-		width: 50vh;
+		width: auto;
 		height: 3.8125rem;
 	}
 }

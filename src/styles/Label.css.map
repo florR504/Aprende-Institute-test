@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["Label.scss"],"names":[],"mappings":"AAGA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAED;EACC,OAfS;EAgBT;EACA,aAhBe;EAiBf;EACA;EACA;EACA","file":"Label.css"}
+{"version":3,"sourceRoot":"","sources":["Label.scss"],"names":[],"mappings":"AAIA;EACC;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,kBAbW;;;AAgBZ;EACG;EACA,OAnBO;;;AAsBV;EAEC;EACA,aAvBe;EAwBf;EACA;EACA;EACA","file":"Label.css"}

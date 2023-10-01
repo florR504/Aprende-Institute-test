@@ -1,9 +1,9 @@
 import '../styles/Label.css'
 const Label = ({ name }) => {
   return (
-    <label className="labelStyle">
+    <button className="labelStyle">
       <p className="labelPStyle">{name}</p>
-    </label>
+    </button>
   );
 };
 export default Label;

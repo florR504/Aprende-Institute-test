@@ -1,15 +1,18 @@
+import React, { useState, useEffect } from "react";
 import "../styles/ProductGrid.css";
 import Label from "./Label";
-import CardImage from "../components/CardImage";
-import { useState, useEffect } from "react";
+import CardImage from "./CardImage";
+
 
 const ProductGrid = () => {
   const [cards, setCards] = useState([]);
+  const [filteredCards, setFilteredCards] = useState([]);
   const [cartsNumber, setCartsNumber] = useState(4);
   const [uniqueSchools, setUniqueSchools] = useState([]);
+  const [selectedSchool, setSelectedSchool] = useState("");
 
   const setNewNumber = () => {
-    setCartsNumber(8);
+    setCartsNumber(cartsNumber + 4);
   };
 
   useEffect(() => {
@@ -19,6 +22,7 @@ const ProductGrid = () => {
       .then((response) => response.json())
       .then((data) => {
         const productData = Object.values(data.results);
+        console.log(data.results);
         const filteredData = productData.filter((product) => {
           return product.post_meta && product.post_meta.school_name;
         });
@@ -28,27 +32,48 @@ const ProductGrid = () => {
 
         setCards(filteredData);
         setUniqueSchools(uniqueSchoolNames);
+        console.log(uniqueSchoolNames);
+        setFilteredCards(filteredData);
       })
       .catch((error) => {
         console.error("Error al obtener los productos:", error);
       });
   }, []);
 
+  const filterBySchool = (school) => {
+    setSelectedSchool(school);
+    if (school === "") {
+      setFilteredCards(cards);
+    } else {
+      const filtered = cards.filter(
+        (product) => product.post_meta.school_name === school
+      );
+      setFilteredCards(filtered);
+    }
+  };
+
   return (
     <div className="productsContainer">
-      <h2 className="productTitle">Nuestros diplomados</h2>
-      <p className="productsText">
+      <div className="titleAndParag">
+        <h2 className="productTitle">Nuestros diplomados</h2>
+        <p className="productsText">
         Usamos la tecnología a tu favor para que avances fácilmente en todos los
         contenidos de nuestros diplomados, siempre con el acompañamiento de un
         docente experto. ¿A cuál escuela quieres unirte?
-      </p>
+        </p>
+      </div>
       <div className="labelsContainer">
         {uniqueSchools.map((schoolName, index) => (
-          <Label key={index} name={schoolName}></Label>
+          <Label
+            key={index}
+            name={schoolName}
+            onClick={() => filterBySchool(schoolName)}
+            active={schoolName === selectedSchool}
+          />
         ))}
       </div>
       <div className="carouselCards">
-        {cards.slice(0, cartsNumber).map((product, index) => (
+        {filteredCards.slice(0, cartsNumber).map((product, index) => (
           <CardImage
             key={index}
             title={product.post_title}
@@ -57,11 +82,14 @@ const ProductGrid = () => {
             image={product.post_meta.featured_image.thumbnail.src}
           />
         ))}
-      </div>
-      <div className="buttonDiv">
-        <button className="buttonCarousel" onClick={setNewNumber}>
-          <p className="buttonCarouselText">Cargar más</p>
-        </button>
+
+        {cartsNumber < filteredCards.length && (
+          <div className="buttonDiv">
+            <button className="buttonCarousel" onClick={setNewNumber}>
+              <p className="buttonCarouselText">Cargar más</p>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

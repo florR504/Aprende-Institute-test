@@ -1,8 +1,8 @@
 .form_body {
   display: flex;
-  width: 18.8rem;
-  margin: 0rem 0.88rem 1.88rem 1rem;
-  height: 33.5rem;
+  width: inherit;
+  margin: 1rem 0.88rem 1.88rem 1rem;
+  height: auto;
   padding: 1.3125rem 0.9375rem;
   flex-direction: column;
   align-items: center;
@@ -45,7 +45,7 @@
 }
 
 .form-container {
-  width: 18.8rem;
+  width: inherit;
   height: 26.3rem;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@
 }
 
 .inputs {
-  width: 18.8rem;
+  width: auto;
   height: 14.8rem;
   margin-bottom: 0.38rem;
   display: flex;
@@ -99,8 +99,8 @@
 }
 
 .autorization {
-  width: 18.8rem;
-  height: 11.1rem;
+  width: inherit;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,14 +145,28 @@
   flex-shrink: 0;
 }
 
+.hide-original-inputs {
+  display: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
 @media (min-width: 788px) {
   .form_body {
-    width: 50vh;
+    width: 25vw;
   }
   .header-container {
     gap: 0.375rem;
     align-self: stretch;
-    width: 50vh;
+    width: 25vw;
   }
   .form-container {
     width: inherit;

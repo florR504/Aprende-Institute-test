@@ -27,7 +27,7 @@
 
 .inputText {
   display: flex;
-  width: 18.8rem;
+  width: auto;
   height: 3.44rem;
   padding-top: 0.38rem;
   flex-direction: column;
@@ -38,7 +38,7 @@
 
 @media (min-width: 788px) {
   .inputText {
-    width: 50vh;
+    width: auto;
     height: 3.8125rem;
   }
 }

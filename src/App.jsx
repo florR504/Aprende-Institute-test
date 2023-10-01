@@ -27,7 +27,7 @@ function App() {
         </section>
       </div>
       <Advertisements />
-      <ProductGrid />
+      <ProductGrid/>
       <Footer />
     </div>
   );

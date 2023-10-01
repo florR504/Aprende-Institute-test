@@ -1,17 +1,22 @@
 .labelStyle {
   display: flex;
   width: 10.1rem;
-  height: 1.13rem;
+  height: 2rem;
   padding: 0.375rem 0.75rem;
   justify-content: center;
   align-items: center;
   gap: 0.375rem;
   border-radius: 1.5rem;
+  border: none;
+  background-color: var(--support-blue-soft, #f1f4fb);
+}
+
+.labelStyle:focus {
   background: var(--secondary-true-dark, #0c0f3d);
+  color: var(--support-white, #fff);
 }
 
 .labelPStyle {
-  color: var(--support-white, #fff);
   text-align: center;
   font-family: "Source Sans 3", sans-serif;
   font-size: 0.875rem;

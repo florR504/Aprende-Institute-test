@@ -1,30 +1,28 @@
 .landing {
-  display: flex;
-  width: 22.5rem;
-  padding-bottom: 7.63rem;
-  height: 220rem;
+  width: 100vw;
+  height: auto;
+  display: grid;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .highlight {
-  width: 22.5rem;
-  height: 69.9375rem;
+  width: 100%;
+  height: auto;
   background: var(--colors-secondary-700, #1b2631);
 }
 
 .background {
+  width: 100%;
   display: flex;
-  width: 22.5rem;
   height: 17rem;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
-  background: linear-gradient(180deg, rgba(27, 38, 49, 0) 29.35%, #1b2631 100%), url("../../public/img/Images.png"), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(27, 38, 49, 0) 29.35%, #1b2631 100%), url("../../public/img/Hero.png"), lightgray 50%/cover no-repeat;
 }
 
 .welcomeText {
-  width: 20.5rem;
   padding: 0rem 1rem;
   color: var(--support-white, #fff);
   font-family: "Source Sans 3", sans-serif;
@@ -64,19 +62,16 @@
     overflow-x: hidden;
   }
   .landing {
-    width: 100%;
     flex-direction: column;
     justify-content: flex-end;
     height: max-content;
   }
   .highlight {
-    width: 100%;
     height: 45rem;
     background: #fff;
     position: relative;
   }
   .background {
-    width: 100%;
     height: 46.75rem;
     background: linear-gradient(180deg, rgba(27, 38, 49, 0) 29.35%, #1b2631 100%), url("../../public/img/Images.png"), lightgray 50%/cover no-repeat;
   }
@@ -86,7 +81,7 @@
     left: 48%;
     transform: translate(-50%, -50%);
     padding: 2rem;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -122,6 +117,19 @@
     text-align: left;
     font-weight: 700;
     line-height: 1.375rem;
+  }
+  .frame327 {
+    width: 30rem;
+    display: inline-flex;
+    padding: 1rem 0.5rem;
+    align-items: flex-start;
+    background: var(--colors-primary-500, #db0f3c);
+    color: var(--support-white, #fff);
+    font-family: "Source Sans 3", sans-serif;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.25rem;
   }
 }
 
