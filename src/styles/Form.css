@@ -55,7 +55,7 @@
 
 .inputs {
   width: auto;
-  height: 14.8rem;
+  height: auto;
   margin-bottom: 0.38rem;
   display: flex;
   flex-direction: column;
@@ -145,13 +145,10 @@
   flex-shrink: 0;
 }
 
-.hide-original-inputs {
-  display: none;
-}
-
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s ease-out;
+  display: none;
 }
 
 .fade-in {
